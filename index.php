@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-4.0.0.min.js"></script>
+</head>
+<body>
+    <button id="data">Load Data</button>
+    <div id="result">
+
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('#data').click(function(){
+                $.get('data.php', function(data){
+                    $('#result').html(data);
+
+                })
+            })
+        })
+    </script>
+</body>
+</html>
