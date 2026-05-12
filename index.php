@@ -14,7 +14,7 @@
     <script>
         $(document).ready(function(){
             $('#data').click(function(){
-                $.get('data.php', function(data){
+                $.get('data.txt', function(data){
                     $('#result').html(data);
 
                 })
