@@ -13,11 +13,11 @@
     </div>
     <script>
         $(document).ready(function(){
-            $('$btn').click(function(){
+            $('#btn').click(function(){
                 $.post('store.php',{
                     name: 'Tanjil'
                 }, function(data){
-                    $('#result').text(data);
+                    $('#result').html(data);
                 }
             )
             })
