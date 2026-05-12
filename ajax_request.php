@@ -11,7 +11,7 @@
     <button class="" id="btn">Submit</button>
 
     <script>
-        $(document).ready(function(){
+        $('#btn').click(function(){
             let uname = $('#name'). val()
             $.ajax(
                 {
@@ -20,8 +20,8 @@
                     data: {
                         name: uname
                     },
-                    success: function(Response){
-                       console.log(Response)
+                    success: function(response){
+                       console.log(response)
                     },
                     error: {
                         function(){
